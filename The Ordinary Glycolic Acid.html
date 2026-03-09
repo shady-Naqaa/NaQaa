@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تونر ذا أورديناري جليكوليك أسيد 7% | NaQaa - نقاء</title>
+    
+    <!-- الخطوط العربية (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- مكتبة الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#fdfbfb', // خلفية بيضاء نقية
+                            beige: '#fcf8f6', // لون بيج ناعم
+                            accent: '#2c2c2c', // أسود ذا أورديناري
+                            cta: '#000000', // لون زر الطلب
+                            ctaHover: '#333333'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-x': 'bounce-x 1s infinite'
+                    },
+                    keyframes: {
+                        'bounce-x': {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '50%': { transform: 'translateX(-25%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fdfbfb;
+            color: #2c2c2c;
+        }
+
+        /* تأثيرات الظهور عند التمرير */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* تنسيق زر الواتساب العائم */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* شريط الطلب السفلي الثابت (للموبايل) */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
+            z-index: 99;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gray-200">
+
+    <!-- شريط الاستعجال العلوي -->
+    <div class="bg-red-50 text-red-600 text-center py-2 text-sm md:text-base font-bold flex justify-center items-center gap-2">
+        <i class="fa-solid fa-fire"></i>
+        <span>العرض لفترة محدودة - الكمية المتبقية قليلة جداً!</span>
+    </div>
+
+    <!-- الهيدر واللوجو (NaQaa - نقاء) -->
+    <header class="bg-white shadow-sm py-3 px-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="1772939233007.jpg" alt="NaQaa - نقاء" class="w-12 h-12 md:w-14 md:h-14 rounded-full border border-gray-100 object-cover shadow-sm">
+                <span class="font-bold text-xl md:text-2xl text-brand-accent">NaQaa - نقاء</span>
+            </div>
+            <a href="https://damenkom-orders.com?id=d965d4d2-8f45-464f-bae3-2acd92548fa4" class="hidden md:inline-block bg-brand-cta text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-brand-ctaHover transition">
+                اطلبي الآن
+            </a>
+        </div>
+    </header>
+
+    <!-- 1️⃣ Hero Section -->
+    <section class="relative pt-8 pb-16 px-4 md:pt-16 md:pb-24 overflow-hidden bg-brand-beige">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <!-- النص -->
+            <div class="w-full md:w-1/2 text-center md:text-right reveal active">
+                <span class="inline-block py-1 px-3 rounded-full bg-gray-200 text-gray-800 text-sm font-bold mb-4">الأكثر مبيعاً 🏆</span>
+                <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 text-brand-accent">
+                    تونر الجليكوليك أسيد 7% <br>
+                    <span class="text-gray-500 text-2xl md:text-4xl">لبشرة أنعم وإشراقة أقوى</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-6 font-medium">
+                    تخلصي من التصبغات، الجلد الميت، والمسام الواسعة خلال أسابيع قليلة مع المقشر اللطيف الأفضل عالمياً.
+                </p>
+                
+                <!-- عرض السعر -->
+                <div class="mb-8 bg-white p-4 rounded-2xl shadow-sm border border-red-100 inline-block text-center md:text-right w-full sm:w-auto">
+                    <div class="flex items-center justify-center md:justify-start gap-3 mb-1">
+                        <span class="text-gray-400 line-through text-xl">1400 ج.م</span>
+                        <span class="text-4xl font-extrabold text-red-600">700 ج.م</span>
+                    </div>
+                    <div class="text-sm font-bold text-green-600 flex items-center justify-center md:justify-start gap-2 bg-green-50 px-3 py-1 rounded-full mt-2 w-max mx-auto md:mx-0">
+                        <i class="fa-solid fa-truck-fast"></i> السعر شامل مصاريف التوصيل!
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://damenkom-orders.com?id=d965d4d2-8f45-464f-bae3-2acd92548fa4" class="bg-brand-cta hover:bg-brand-ctaHover text-white text-xl font-bold py-4 px-10 rounded-lg shadow-xl transform transition hover:-translate-y-1 flex items-center justify-center gap-3 w-full sm:w-auto">
+                        <span>اطلبي الآن</span>
+                        <i class="fa-solid fa-arrow-left animate-bounce-x"></i>
+                    </a>
+                </div>
+                
+                <div class="mt-6 flex items-center justify-center md:justify-start gap-4 text-sm text-gray-500">
+                    <div class="flex items-center gap-1"><i class="fa-solid fa-check-circle text-green-500"></i> أصلي 100%</div>
+                    <div class="flex items-center gap-1"><i class="fa-solid fa-truck text-brand-accent"></i> شحن سريع</div>
+                    <div class="flex items-center gap-1"><i class="fa-solid fa-shield-halved text-brand-accent"></i> ضمان الجودة</div>
+                </div>
+            </div>
+
+            <!-- الصورة -->
+            <div class="w-full md:w-1/2 relative reveal active">
+                <div class="absolute inset-0 bg-white opacity-50 blur-3xl rounded-full"></div>
+                <img src="image-1.jpg" alt="تونر ذا أورديناري جليكوليك أسيد" class="relative z-10 w-full max-w-md mx-auto rounded-2xl shadow-2xl border border-gray-100" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2️⃣ Problem Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <h2 class="text-2xl md:text-4xl font-bold mb-4 text-brand-accent">هل تعانين من هذه المشاكل في بشرتك؟</h2>
+            <p class="text-gray-500 mb-10 text-lg">بشرتك تستحق أن تكون صافية ومشرقة يومياً</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
+                <!-- Problem 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center justify-center gap-3 transition hover:shadow-md">
+                    <div class="w-14 h-14 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-2xl mb-2">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800">اسمرار البشرة</h3>
+                </div>
+                <!-- Problem 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center justify-center gap-3 transition hover:shadow-md">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center text-2xl mb-2">
+                        <i class="fa-solid fa-circle-dot"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800">المسام الواسعة</h3>
+                </div>
+                <!-- Problem 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center justify-center gap-3 transition hover:shadow-md">
+                    <div class="w-14 h-14 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center text-2xl mb-2">
+                        <i class="fa-solid fa-disease"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800">آثار الحبوب</h3>
+                </div>
+                <!-- Problem 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center justify-center gap-3 transition hover:shadow-md">
+                    <div class="w-14 h-14 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center text-2xl mb-2">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800">الجلد الميت</h3>
+                </div>
+                <!-- Problem 5 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col items-center justify-center gap-3 transition hover:shadow-md col-span-2 md:col-span-1">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center text-2xl mb-2">
+                        <i class="fa-solid fa-adjust"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800">تفاوت اللون</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Product Benefits Section -->
+    <section class="py-16 px-4 bg-brand-beige overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 reveal">
+                <img src="image-4.jpg" alt="فوائد التونر" class="w-full max-w-md mx-auto rounded-2xl shadow-xl transform hover:scale-105 transition duration-500" loading="lazy">
+            </div>
+            <div class="w-full md:w-1/2 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-brand-accent">الحل السحري لبشرة زجاجية خالية من العيوب ✨</h2>
+                <ul class="space-y-5">
+                    <li class="flex items-start gap-4">
+                        <div class="bg-brand-accent text-white rounded-full p-2 mt-1"><i class="fa-solid fa-check text-sm"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">تقشير لطيف وفعال</h4>
+                            <p class="text-gray-600">يزيل خلايا الجلد الميتة بلطف دون التسبب في تهيج البشرة.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-brand-accent text-white rounded-full p-2 mt-1"><i class="fa-solid fa-check text-sm"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">توحيد لون البشرة</h4>
+                            <p class="text-gray-600">يعمل على تفتيح التصبغات والبقع الداكنة للحصول على لون متجانس.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-brand-accent text-white rounded-full p-2 mt-1"><i class="fa-solid fa-check text-sm"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">تصغير مظهر المسام</h4>
+                            <p class="text-gray-600">ينظف المسام بعمق مما يقلل من حجمها ومظهرها بشكل ملحوظ.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="bg-brand-accent text-white rounded-full p-2 mt-1"><i class="fa-solid fa-check text-sm"></i></div>
+                        <div>
+                            <h4 class="font-bold text-xl text-gray-800">إشراقة طبيعية فورية</h4>
+                            <p class="text-gray-600">يمنح بشرتك نضارة ولمعاناً صحياً من الأسابيع الأولى للاستخدام.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mt-8">
+                     <a href="https://damenkom-orders.com?id=d965d4d2-8f45-464f-bae3-2acd92548fa4" class="inline-block bg-brand-cta hover:bg-brand-ctaHover text-white text-lg font-bold py-3 px-8 rounded-lg shadow-lg transition w-full md:w-auto text-center">
+                        احصلي على بشرة أحلامك الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6️⃣ Ingredients Section -->
+    <section class="py-16 px-4 bg-white border-y border-gray-100">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <h2 class="text-3xl font-bold mb-4 text-brand-accent">سر الفعالية: مكونات مدروسة علمياً 🧪</h2>
+            <p class="text-gray-500 mb-10 text-lg">تركيبة نقية خالية من الكحول والزيوت.</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="w-full md:w-1/2 p-6 bg-gray-50 rounded-2xl text-right">
+                    <h3 class="text-2xl font-bold text-brand-accent mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-flask text-gray-400"></i> جليكوليك أسيد (AHA) 7%
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        حمض ألفا هيدروكسي مقشر يعمل على سطح البشرة لفك الروابط بين خلايا الجلد الميتة، مما يسهل إزالتها ليكشف عن بشرة جديدة، ناعمة ومشرقة ويحسن ملمس الجلد بشكل ملحوظ.
+                    </p>
+                    
+                    <h3 class="text-xl font-bold text-brand-accent mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-leaf text-green-600"></i> فلفل تسمانيا (Tasmanian Pepperberry)
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        مستخلص نباتي تمت إضافته خصيصاً لتقليل الالتهاب والتهيج الذي قد يصاحب استخدام الأحماض المقشرة، مما يجعله لطيفاً ومناسباً للاستخدام.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="image-5.jpg" alt="المكونات" class="w-full rounded-2xl shadow-sm border border-gray-200" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4️⃣ Before / After Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h2 class="text-3xl font-bold mb-10 text-brand-accent">نتائج حقيقية تتحدث عن نفسها</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- التجربة الحقيقية -->
+                <div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="relative h-64 md:h-96 bg-gray-200 rounded-xl overflow-hidden flex mb-6 border border-gray-100">
+                        
+                        <!-- صورة قبل -->
+                        <div class="w-1/2 relative h-full">
+                            <img src="قبل.jpg" alt="البشرة قبل استخدام تونر أورديناري" class="w-full h-full object-cover">
+                            <div class="absolute top-3 right-3 bg-red-500 text-white text-xs md:text-sm px-3 py-1.5 rounded shadow-lg font-bold z-10">قبل</div>
+                        </div>
+                        
+                        <!-- الخط الفاصل -->
+                        <div class="w-1.5 bg-white z-20 shadow-[0_0_15px_rgba(0,0,0,0.3)]"></div>
+                        
+                        <!-- صورة بعد -->
+                        <div class="w-1/2 relative h-full">
+                            <img src="بعد.jpg" alt="البشرة بعد استخدام تونر أورديناري" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-green-500 text-white text-xs md:text-sm px-3 py-1.5 rounded shadow-lg font-bold z-10">بعد 4 أسابيع</div>
+                        </div>
+                        
+                    </div>
+                    <p class="font-bold text-gray-800 text-xl md:text-2xl">تصغير واضح للمسام وتحسن ملحوظ في نعومة وملمس البشرة ✨</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5️⃣ How To Use Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-accent mb-4">طريقة الاستخدام الصحيحة 🧴</h2>
+                <p class="text-gray-500">للحصول على أفضل النتائج، اتبعي هذه الخطوات البسيطة (يُفضل مساءً)</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <!-- خطوة 1 -->
+                <div class="relative p-6 bg-brand-beige rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl font-bold text-brand-accent shadow-sm mx-auto mb-4 border border-gray-200">1</div>
+                    <h3 class="font-bold text-lg mb-2">تنظيف الوجه</h3>
+                    <p class="text-gray-600 text-sm">اغسلي وجهك بالغسول المناسب وجففيه تماماً (لا يستخدم على بشرة مبللة).</p>
+                </div>
+                <!-- خطوة 2 -->
+                <div class="relative p-6 bg-brand-beige rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl font-bold text-brand-accent shadow-sm mx-auto mb-4 border border-gray-200">2</div>
+                    <h3 class="font-bold text-lg mb-2">وضع التونر</h3>
+                    <p class="text-gray-600 text-sm">ضعي كمية مناسبة من التونر على قطعة قطن نظيفة.</p>
+                </div>
+                <!-- خطوة 3 -->
+                <div class="relative p-6 bg-brand-beige rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl font-bold text-brand-accent shadow-sm mx-auto mb-4 border border-gray-200">3</div>
+                    <h3 class="font-bold text-lg mb-2">تمرير القطنة</h3>
+                    <p class="text-gray-600 text-sm">مرري القطنة بلطف على الوجه والرقبة، وتجنبي محيط العينين تماماً.</p>
+                </div>
+                <!-- خطوة 4 -->
+                <div class="relative p-6 bg-brand-beige rounded-2xl border border-gray-100">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl font-bold text-brand-accent shadow-sm mx-auto mb-4 border border-gray-200">4</div>
+                    <h3 class="font-bold text-lg mb-2">الترطيب</h3>
+                    <p class="text-gray-600 text-sm">انتظري قليلاً حتى يمتصه الجلد ثم ضعي مرطبك المعتاد (لا يغسل بالماء).</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-red-500 font-bold bg-red-50 p-4 rounded-lg inline-block w-full">
+                <i class="fa-solid fa-triangle-exclamation"></i> تنبيه: يجب استخدام واقي شمس (Sunscreen) نهاراً أثناء فترة استخدام المنتج.
+            </div>
+        </div>
+    </section>
+
+    <!-- 8️⃣ Product Gallery -->
+    <section class="py-16 px-4 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto text-center reveal">
+            <h2 class="text-3xl font-bold text-brand-accent mb-10">نظرة عن قرب للمنتج 📸</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="image-2.jpg" alt="عبوة المنتج" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="image-6.jpg" alt="قوام التونر المائي" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition col-span-2 md:col-span-1">
+                    <img src="image-3.jpg" alt="زجاجة التونر" class="w-full h-full object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7️⃣ Social Proof Section (Reviews) -->
+    <section class="py-16 px-4 bg-brand-beige">
+        <div class="max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-bold text-center text-brand-accent mb-10">ماذا تقول عميلاتنا؟ 💬</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="text-yellow-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">سحر! بشرتي بقت أنعم بفرق واضح</h4>
+                    <p class="text-gray-600 text-sm mb-4">"كنت بعاني من حبوب تحت الجلد وملمس خشن، بعد أسبوعين من الاستخدام حسيت بفرق شاسع، البشرة بتلمع وناعمة جداً."</p>
+                    <div class="flex items-center gap-3 text-sm font-bold text-gray-500">
+                        <div class="w-8 h-8 bg-pink-100 text-pink-500 rounded-full flex items-center justify-center">ن</div>
+                        <span>نورهان أ. <i class="fa-solid fa-circle-check text-blue-500 text-xs ml-1"></i></span>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="text-yellow-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">أفضل تونر استخدمته للتصبغات</h4>
+                    <p class="text-gray-600 text-sm mb-4">"عندي آثار حبوب قديمة لونها بني، جربت منتجات كتير ومفيش نتيجة زي دي. التصبغات خفت بنسبة 70% في شهر."</p>
+                    <div class="flex items-center gap-3 text-sm font-bold text-gray-500">
+                        <div class="w-8 h-8 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center">م</div>
+                        <span>مريم خ. <i class="fa-solid fa-circle-check text-blue-500 text-xs ml-1"></i></span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 relative">
+                    <div class="text-yellow-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-2">ممتاز للمسام و النضارة</h4>
+                    <p class="text-gray-600 text-sm mb-4">"المنتج دا أساسي في روتيني دلوقتي. بستخدمه مرتين في الأسبوع وبصراحة بيخلي وشي منور والمسام شكلها أنضف بكتير."</p>
+                    <div class="flex items-center gap-3 text-sm font-bold text-gray-500">
+                        <div class="w-8 h-8 bg-teal-100 text-teal-500 rounded-full flex items-center justify-center">س</div>
+                        <span>سارة م. <i class="fa-solid fa-circle-check text-blue-500 text-xs ml-1"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-white border-t border-gray-100">
+        <div class="max-w-3xl mx-auto reveal">
+            <h2 class="text-3xl font-bold text-center text-brand-accent mb-10">الأسئلة الشائعة ❓</h2>
+            <div class="space-y-4">
+                
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden faq-item">
+                    <button class="w-full text-right p-5 bg-gray-50 font-bold text-gray-800 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>هل مناسب لكل أنواع البشرة؟</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="p-5 text-gray-600 bg-white hidden border-t border-gray-100 text-sm leading-relaxed">
+                        نعم، هو مناسب لمعظم أنواع البشرة (العادية، الدهنية، المختلطة، والجافة). ولكن يجب استخدامه بحذر مع البشرة شديدة الحساسية أو المتهيجة، ويُفضل إجراء اختبار حساسية على جزء صغير من الجلد قبل الاستخدام الكامل.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden faq-item">
+                    <button class="w-full text-right p-5 bg-gray-50 font-bold text-gray-800 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>كم مرة يجب استخدامه؟</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="p-5 text-gray-600 bg-white hidden border-t border-gray-100 text-sm leading-relaxed">
+                        يُفضل البدء باستخدامه مرتين أو 3 مرات أسبوعياً مساءً فقط حتى تعتاد عليه البشرة. لا يُنصح باستخدامه أكثر من مرة واحدة يومياً كحد أقصى.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden faq-item">
+                    <button class="w-full text-right p-5 bg-gray-50 font-bold text-gray-800 flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span>متى تظهر النتائج؟</span>
+                        <i class="fa-solid fa-chevron-down text-gray-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="p-5 text-gray-600 bg-white hidden border-t border-gray-100 text-sm leading-relaxed">
+                        النعومة والإشراقة المؤقتة قد تلاحظينها من الأسبوع الأول. أما بالنسبة لتحسن التصبغات وتصغير مظهر المسام، فعادة ما يتطلب الأمر الاستمرار بانتظام لمدة 4 إلى 8 أسابيع لملاحظة فروق واضحة.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 10️⃣ Final CTA Section -->
+    <section class="py-20 px-4 bg-brand-accent text-white text-center">
+        <div class="max-w-4xl mx-auto reveal">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">لا تفوتي الفرصة.. المخزون يوشك على النفاذ!</h2>
+            <p class="text-gray-300 text-lg mb-8">ابدئي رحلتك نحو بشرة صافية ومثالية اليوم. اطلبي الآن واضمني المنتج الأصلي.</p>
+            
+            <!-- عرض السعر في القسم الأخير -->
+            <div class="mb-10 bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20 inline-block text-center max-w-md w-full">
+                <div class="text-red-300 font-bold mb-2 text-sm uppercase tracking-wider">خصم 50% لفترة محدودة</div>
+                <div class="flex items-center justify-center gap-4 mb-2">
+                    <span class="text-gray-400 line-through text-2xl">1400 ج</span>
+                    <span class="text-5xl font-extrabold text-yellow-400">700 ج</span>
+                </div>
+                <div class="text-lg font-bold text-white flex items-center justify-center gap-2 mt-3 bg-green-500/20 py-2 rounded-lg">
+                    <i class="fa-solid fa-gift"></i> السعر شامل التوصيل لجميع المحافظات
+                </div>
+            </div>
+            <br>
+
+            <a href="https://damenkom-orders.com?id=d965d4d2-8f45-464f-bae3-2acd92548fa4" class="inline-block bg-white text-brand-accent text-2xl font-bold py-5 px-12 rounded-xl shadow-[0_0_30px_rgba(255,255,255,0.3)] transform transition hover:scale-105 animate-pulse-slow">
+                اطلب المنتج الآن
+            </a>
+            <div class="mt-6 text-sm text-gray-400 flex justify-center gap-4">
+                <span><i class="fa-solid fa-lock"></i> دفع آمن</span>
+                <span><i class="fa-solid fa-rotate-left"></i> سياسة استرجاع مرنة</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+        <p>جميع الحقوق محفوظة لصالح NaQaa - نقاء &copy; 2024</p>
+    </footer>
+
+    <!-- Floating WhatsApp Icon -->
+    <!-- الرابط جاهز بالصيغة الدولية لمصر -->
+    <a href="https://wa.me/201035105909" target="_blank" class="whatsapp-float" aria-label="تواصل معنا عبر واتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Order Button for Mobile -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="https://damenkom-orders.com?id=d965d4d2-8f45-464f-bae3-2acd92548fa4" class="w-full max-w-sm mx-auto bg-brand-cta text-white text-center font-bold py-3 px-4 rounded-lg shadow-lg text-lg flex items-center justify-between">
+            <span class="flex items-center gap-2">🛒 اطلبي الآن</span>
+            <div class="flex items-center gap-2 text-sm bg-white/20 px-3 py-1 rounded-md">
+                <span class="font-extrabold text-yellow-300">700 ج</span>
+                <span class="text-xs">شامل التوصيل</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- JavaScripts -->
+    <script>
+        // 1. Reveal Elements on Scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger on load
+
+        // 2. FAQ Toggle Function
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // 3. Show Sticky CTA on Mobile after scrolling past hero
+        const stickyCta = document.getElementById('stickyCta');
+        const heroSection = document.querySelector('section:first-of-type'); // أول سيكشن بعد الهيدر
+
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth < 768) { // للموبايل فقط
+                const heroBottom = heroSection.getBoundingClientRect().bottom;
+                if (heroBottom < 0) {
+                    stickyCta.classList.add('show');
+                } else {
+                    stickyCta.classList.remove('show');
+                }
+            }
+        });
+        
+        // إعادة ضبط عند تغيير حجم الشاشة
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                stickyCta.classList.remove('show');
+            }
+        });
+
+    </script>
+</body>
+</html>
